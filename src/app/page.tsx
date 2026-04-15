@@ -8,7 +8,7 @@ import WelcomeScreen from '@/components/WelcomeScreen';
 import QuestionScreen from '@/components/QuestionScreen';
 import ResultScreen from '@/components/ResultScreen';
 import HelpModal from '@/components/HelpModal';
-import LanguageSwitcher from '@/components/LanguageSwitcher';
+import AppHeader from '@/components/AppHeader';
 
 type Phase = 'welcome' | 'question' | 'result';
 
@@ -97,9 +97,7 @@ function HomeContent({ rootNode }: { rootNode: TreeNode }) {
       return (
         <QuestionScreen
           node={currentNode as QuestionNode}
-          history={history}
           onSelect={handleOptionSelect}
-          onBack={handleBack}
         />
       );
     }
@@ -118,19 +116,16 @@ function HomeContent({ rootNode }: { rootNode: TreeNode }) {
   }
 
   return (
-    <>
-      {renderScreen()}
-      <div className="fixed bottom-5 right-5 z-40 flex flex-col items-end gap-2">
-        <LanguageSwitcher />
-        <button
-          onClick={() => setShowHelp(true)}
-          className="w-10 h-10 rounded-full bg-white border border-violet-200 text-violet-500 font-bold text-lg shadow-md hover:bg-violet-50 hover:text-violet-700 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-violet-400"
-          aria-label={t.helpButtonAriaLabel}
-        >
-          ?
-        </button>
-      </div>
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-violet-50 via-white to-indigo-50">
+      <AppHeader
+        onHelpClick={() => setShowHelp(true)}
+        history={phase === 'question' ? history : undefined}
+        onBack={phase === 'question' ? handleBack : undefined}
+      />
+      <main className="flex-1 flex flex-col">
+        {renderScreen()}
+      </main>
       {showHelp && <HelpModal onClose={() => setShowHelp(false)} />}
-    </>
+    </div>
   );
 }

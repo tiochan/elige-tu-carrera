@@ -10,7 +10,7 @@ export default function WelcomeScreen({ onStart }: Props) {
   const t = useStrings();
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center px-6 py-12 bg-gradient-to-br from-violet-50 via-white to-indigo-50">
+    <div className="flex flex-col items-center justify-center flex-1 px-6 py-12">
       <div className="max-w-xl w-full text-center space-y-8">
         <div className="space-y-5">
           <div className="text-7xl select-none">🔭</div>
