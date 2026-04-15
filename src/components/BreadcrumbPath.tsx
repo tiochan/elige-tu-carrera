@@ -1,6 +1,7 @@
 'use client';
 
 import type { HistoryEntry } from '@/types';
+import { useStrings } from '@/i18n';
 
 interface Props {
   history: HistoryEntry[];
@@ -8,13 +9,15 @@ interface Props {
 }
 
 export default function BreadcrumbPath({ history, onBack }: Props) {
+  const t = useStrings();
+
   return (
     <div className="flex items-start gap-3 flex-wrap">
       <button
         onClick={onBack}
         className="shrink-0 flex items-center gap-1 text-sm font-semibold text-violet-600 hover:text-violet-800 transition-colors bg-white border border-violet-200 rounded-full px-3 py-1 shadow-sm hover:shadow"
       >
-        ← Volver
+        {t.breadcrumb.back}
       </button>
       {history.length > 0 && (
         <div className="flex items-center gap-1.5 flex-wrap text-sm">

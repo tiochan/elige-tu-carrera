@@ -1,3 +1,5 @@
+export type Locale = 'es' | 'ca' | 'gl';
+
 export type BachilleratoTrack = 'ciencias' | 'tecnologico' | 'sociales' | 'artes';
 
 export interface Career {
@@ -32,13 +34,6 @@ export interface HistoryEntry {
   node: QuestionNode;
   chosenOptionLabel: string;
 }
-
-export const BACHILLERATO_LABELS: Record<BachilleratoTrack, string> = {
-  ciencias: 'Ciencias',
-  tecnologico: 'Tecnológico',
-  sociales: 'Humanidades y Sociales',
-  artes: 'Artes',
-};
 
 export const BACHILLERATO_COLORS: Record<BachilleratoTrack, string> = {
   ciencias: 'bg-teal-100 text-teal-800 border-teal-200',
