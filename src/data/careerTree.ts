@@ -18,6 +18,12 @@ const leafMedicinaCuidados: LeafNode = {
       bachillerato: ['ciencias'],
     },
     {
+      name: 'Odontología',
+      description: 'Cuidas la salud bucodental diagnosticando y tratando enfermedades de dientes, encías y boca.',
+      dayInLife: ['Realizar revisiones y diagnosticar problemas bucodentales', 'Tratar caries, realizar extracciones y ortodoncia', 'Asesorar sobre higiene oral y prevención'],
+      bachillerato: ['ciencias'],
+    },
+    {
       name: 'Fisioterapia',
       description: 'Recuperas la movilidad y el bienestar físico mediante ejercicio y técnicas manuales.',
       dayInLife: ['Evaluar la lesión o limitación del paciente', 'Diseñar un plan de rehabilitación personalizado', 'Hacer seguimiento de la evolución'],
@@ -51,6 +57,30 @@ const leafInvestigacionBiomedica: LeafNode = {
       name: 'Salud Pública',
       description: 'Proteges y mejoras la salud de toda una comunidad o población.',
       dayInLife: ['Analizar datos epidemiológicos', 'Diseñar campañas de prevención', 'Asesorar a organismos sobre políticas sanitarias'],
+      bachillerato: ['ciencias'],
+    },
+  ],
+};
+
+const leafSaludFisicaPreventiva: LeafNode = {
+  type: 'leaf',
+  careers: [
+    {
+      name: 'Ciencias del Deporte (CAFYD)',
+      description: 'Aplicas el conocimiento científico del movimiento humano para mejorar el rendimiento deportivo y la salud.',
+      dayInLife: ['Diseñar programas de entrenamiento personalizados', 'Analizar el rendimiento físico con tecnología', 'Trabajar con deportistas o en programas de salud comunitaria'],
+      bachillerato: ['ciencias'],
+    },
+    {
+      name: 'Nutrición y Dietética',
+      description: 'Diseñas planes de alimentación para prevenir enfermedades y mejorar la salud de las personas.',
+      dayInLife: ['Evaluar el estado nutricional del paciente', 'Elaborar dietas adaptadas a cada caso clínico', 'Educar sobre hábitos alimentarios saludables'],
+      bachillerato: ['ciencias'],
+    },
+    {
+      name: 'Óptica y Optometría',
+      description: 'Evalúas la salud visual y corriges los defectos de visión con lentes y tratamientos ópticos.',
+      dayInLife: ['Realizar exámenes visuales completos', 'Prescribir y adaptar gafas y lentillas', 'Detectar y derivar patologías oculares'],
       bachillerato: ['ciencias'],
     },
   ],
@@ -99,6 +129,12 @@ const leafEducacion: LeafNode = {
       name: 'Psicopedagogía',
       description: 'Orientas a estudiantes con dificultades de aprendizaje y apoyas a equipos docentes.',
       dayInLife: ['Evaluar las dificultades de aprendizaje', 'Diseñar planes de apoyo individualizados', 'Asesorar a docentes y familias'],
+      bachillerato: ['sociales'],
+    },
+    {
+      name: 'Educación Social',
+      description: 'Acompañas a personas en riesgo de exclusión para favorecer su integración y desarrollo social.',
+      dayInLife: ['Diseñar programas socioeducativos en barrios o instituciones', 'Trabajar con jóvenes, personas mayores o colectivos vulnerables', 'Coordinar con servicios sociales y entidades del tercer sector'],
       bachillerato: ['sociales'],
     },
   ],
@@ -219,6 +255,12 @@ const leafCienciasVida: LeafNode = {
       name: 'Ciencias Ambientales',
       description: 'Analizas y propones soluciones a los problemas medioambientales.',
       dayInLife: ['Realizar estudios de impacto ambiental', 'Proponer planes de gestión de residuos o conservación', 'Asesorar a empresas y administraciones públicas'],
+      bachillerato: ['ciencias'],
+    },
+    {
+      name: 'Ciencias del Mar',
+      description: 'Investigas los océanos, su biodiversidad y los procesos que regulan el clima y los ecosistemas marinos.',
+      dayInLife: ['Tomar muestras y datos en expediciones marinas', 'Analizar el impacto humano en los ecosistemas costeros', 'Asesorar sobre gestión sostenible de recursos pesqueros'],
       bachillerato: ['ciencias'],
     },
   ],
@@ -389,6 +431,12 @@ const leafIngenieriaAplicada: LeafNode = {
       dayInLife: ['Diseñar robots industriales o de servicio', 'Planificar redes de comunicación 5G o satelital', 'Integrar sensores e inteligencia artificial en sistemas físicos'],
       bachillerato: ['tecnologico'],
     },
+    {
+      name: 'Ingeniería Aeroespacial',
+      description: 'Diseñas aeronaves, satélites y sistemas de propulsión para la aviación y la exploración espacial.',
+      dayInLife: ['Calcular estructuras y sistemas de vuelo', 'Diseñar y probar componentes en simuladores o túneles de viento', 'Colaborar en proyectos aeroespaciales internacionales'],
+      bachillerato: ['tecnologico'],
+    },
   ],
 };
 
@@ -459,6 +507,12 @@ const leafDerechoPolitica: LeafNode = {
       name: 'Relaciones Internacionales',
       description: 'Trabajas en diplomacia, cooperación y análisis de los asuntos globales.',
       dayInLife: ['Negociar acuerdos entre países u organismos internacionales', 'Analizar conflictos y situaciones geopolíticas', 'Trabajar en ONG, embajadas u organismos como la ONU'],
+      bachillerato: ['sociales'],
+    },
+    {
+      name: 'Criminología',
+      description: 'Estudias el crimen, sus causas y consecuencias para diseñar políticas de prevención y seguridad.',
+      dayInLife: ['Analizar patrones delictivos y perfiles criminales', 'Colaborar con fuerzas de seguridad y juzgados', 'Proponer políticas de reinserción y prevención del delito'],
       bachillerato: ['sociales'],
     },
   ],
@@ -536,6 +590,30 @@ const leafEconomiaFinanzas: LeafNode = {
   ],
 };
 
+const leafTurismo: LeafNode = {
+  type: 'leaf',
+  careers: [
+    {
+      name: 'Turismo',
+      description: 'Planificas, gestionas y promocionas destinos y productos turísticos a nivel nacional e internacional.',
+      dayInLife: ['Diseñar paquetes turísticos y gestionar agencias de viaje', 'Analizar tendencias del mercado turístico', 'Trabajar en destinos turísticos, aeropuertos u organismos de promoción'],
+      bachillerato: ['sociales'],
+    },
+    {
+      name: 'Dirección Hotelera',
+      description: 'Gestionas establecimientos de alojamiento y hostelería asegurando la excelencia en la experiencia del huésped.',
+      dayInLife: ['Supervisar los departamentos del hotel (recepción, restauración, pisos)', 'Gestionar el revenue y las reservas', 'Liderar equipos y garantizar la satisfacción del cliente'],
+      bachillerato: ['sociales'],
+    },
+    {
+      name: 'Gastronomía y Artes Culinarias',
+      description: 'Creas y gestionas experiencias gastronómicas combinando técnica culinaria, creatividad y cultura.',
+      dayInLife: ['Diseñar menús y desarrollar nuevas recetas', 'Gestionar cocinas de restaurantes o empresas de catering', 'Investigar técnicas culinarias innovadoras y tendencias gastronómicas'],
+      bachillerato: ['sociales', 'artes'],
+    },
+  ],
+};
+
 // ─── LEVEL 3 QUESTION NODES ──────────────────────────────────────────────────
 
 const nodeSaludFisicaDetalle: QuestionNode = {
@@ -544,15 +622,21 @@ const nodeSaludFisicaDetalle: QuestionNode = {
   options: [
     {
       label: 'Tratar directamente a pacientes',
-      imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/sanitaria-paciente.jpg',
       imageAlt: 'Médica revisando a un paciente con amabilidad',
       next: leafMedicinaCuidados,
     },
     {
       label: 'Investigar enfermedades y desarrollar tratamientos',
-      imageUrl: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/cientifica-laboratorio.jpg',
       imageAlt: 'Científica investigando en un laboratorio biomédico',
       next: leafInvestigacionBiomedica,
+    },
+    {
+      label: 'Deporte, nutrición y bienestar físico preventivo',
+      imageUrl: '/images/entrenadora-deporte.jpg',
+      imageAlt: 'Preparadora física entrenando con deportistas en instalación deportiva',
+      next: leafSaludFisicaPreventiva,
     },
   ],
 };
@@ -563,13 +647,13 @@ const nodeArteVisualDetalle: QuestionNode = {
   options: [
     {
       label: 'Arte clásico: pintura, escultura, patrimonio',
-      imageUrl: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/artista-estudio.jpg',
       imageAlt: 'Artista pintando en su estudio con colores vibrantes',
       next: leafBellasArtes,
     },
     {
       label: 'Diseño digital: gráfico, UX, animación',
-      imageUrl: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/disenadora-digital.jpg',
       imageAlt: 'Diseñadora creando una interfaz digital en pantalla',
       next: leafDisenoDigital,
     },
@@ -582,13 +666,13 @@ const nodeSoftwareDetalle: QuestionNode = {
   options: [
     {
       label: 'Crear apps, webs, videojuegos y sistemas seguros',
-      imageUrl: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/desarrolladora-codigo.jpg',
       imageAlt: 'Desarrolladora programando con múltiples pantallas de código',
       next: leafSoftware,
     },
     {
       label: 'Inteligencia artificial, datos y algoritmos',
-      imageUrl: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/visualizacion-ia.jpg',
       imageAlt: 'Pantallas con visualizaciones de datos y modelos de IA',
       next: leafIADatos,
     },
@@ -601,13 +685,13 @@ const nodeIngFisicaDetalle: QuestionNode = {
   options: [
     {
       label: 'Edificios, puentes, infraestructuras y ciudades',
-      imageUrl: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/arquitecta-planos.jpg',
       imageAlt: 'Arquitecta revisando planos de una gran estructura',
       next: leafIngenieriaEstructuras,
     },
     {
       label: 'Máquinas, robots, electrónica y telecomunicaciones',
-      imageUrl: 'https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/ingeniera-robot.jpg',
       imageAlt: 'Ingeniera trabajando con un robot y componentes electrónicos',
       next: leafIngenieriaAplicada,
     },
@@ -620,13 +704,13 @@ const nodeNaturalezaViviente: QuestionNode = {
   options: [
     {
       label: 'Ecosistemas, animales y medio ambiente',
-      imageUrl: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/biologa-bosque.jpg',
       imageAlt: 'Bióloga tomando muestras en un bosque exuberante',
       next: leafCienciasVida,
     },
     {
       label: 'Genética, biotecnología y vida a escala molecular',
-      imageUrl: 'https://images.unsplash.com/photo-1628595351029-c2bf17511435?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/cientifica-genetica.jpg',
       imageAlt: 'Científica trabajando con muestras genéticas en laboratorio',
       next: leafBiotecnologia,
     },
@@ -639,13 +723,13 @@ const nodeNaturalezaFisica: QuestionNode = {
   options: [
     {
       label: 'Física, matemáticas y el cosmos',
-      imageUrl: 'https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/observatorio-telescopio.jpg',
       imageAlt: 'Observatorio con telescopio apuntando al cielo estrellado',
       next: leafFisicaMatematicas,
     },
     {
       label: 'Química, materiales y transformación de la materia',
-      imageUrl: 'https://images.unsplash.com/photo-1554475901-4538ddfbccc2?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/quimica-laboratorio.jpg',
       imageAlt: 'Química experimentando con compuestos en laboratorio',
       next: leafQuimica,
     },
@@ -658,13 +742,13 @@ const nodeHistoriaOLenguas: QuestionNode = {
   options: [
     {
       label: 'El pasado: historia, filosofía y patrimonio',
-      imageUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/investigadora-libros.jpg',
       imageAlt: 'Investigadora rodeada de libros históricos en una biblioteca',
       next: leafHistoriaFilosofia,
     },
     {
       label: 'Las lenguas, los idiomas y la comunicación intercultural',
-      imageUrl: 'https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/traductora-idiomas.jpg',
       imageAlt: 'Traductora trabajando con textos de diferentes idiomas',
       next: leafLenguas,
     },
@@ -679,19 +763,19 @@ const nodeCuidar: QuestionNode = {
   options: [
     {
       label: 'Cuidando su salud y bienestar físico',
-      imageUrl: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/medica-paciente.jpg',
       imageAlt: 'Médica con bata blanca acompañando a una paciente',
       next: nodeSaludFisicaDetalle,
     },
     {
       label: 'Apoyando su bienestar emocional y mental',
-      imageUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/psicologa-consulta.jpg',
       imageAlt: 'Psicóloga escuchando atentamente a una persona en consulta',
       next: leafSaludMental,
     },
     {
       label: 'Enseñando y educando',
-      imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/profesora-clase.jpg',
       imageAlt: 'Profesora entusiasta explicando a estudiantes en clase',
       next: leafEducacion,
     },
@@ -704,19 +788,19 @@ const nodeCrear: QuestionNode = {
   options: [
     {
       label: 'Arte visual y diseño',
-      imageUrl: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/artista-estudio.jpg',
       imageAlt: 'Artista creando una obra en su estudio lleno de color',
       next: nodeArteVisualDetalle,
     },
     {
       label: 'Música, teatro o danza',
-      imageUrl: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/actuacion-escenario.jpg',
       imageAlt: 'Actuación en escenario con luces dramáticas',
       next: leafArtesEscenicas,
     },
     {
       label: 'Contar historias y comunicar al mundo',
-      imageUrl: 'https://images.unsplash.com/photo-1504711434969-e33886168f5c?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/periodista-camara.jpg',
       imageAlt: 'Periodista grabando un reportaje con cámara profesional',
       next: leafComunicacion,
     },
@@ -729,13 +813,13 @@ const nodeNaturaleza: QuestionNode = {
   options: [
     {
       label: 'Los seres vivos: animales, plantas y células',
-      imageUrl: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/biologa-bosque.jpg',
       imageAlt: 'Bióloga tomando muestras en un bosque exuberante',
       next: nodeNaturalezaViviente,
     },
     {
       label: 'La materia, la energía y el cosmos',
-      imageUrl: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/cientifica-laboratorio.jpg',
       imageAlt: 'Investigadora en laboratorio con equipo científico de precisión',
       next: nodeNaturalezaFisica,
     },
@@ -748,13 +832,13 @@ const nodeConstruir: QuestionNode = {
   options: [
     {
       label: 'Software, apps e inteligencia artificial',
-      imageUrl: 'https://images.unsplash.com/photo-1484417894907-623942c8ee29?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/desarrolladora-codigo.jpg',
       imageAlt: 'Desarrolladora programando con múltiples pantallas de código',
       next: nodeSoftwareDetalle,
     },
     {
       label: 'Máquinas, estructuras e infraestructuras físicas',
-      imageUrl: 'https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/ingeniera-industrial.jpg',
       imageAlt: 'Ingeniera supervisando una gran instalación industrial',
       next: nodeIngFisicaDetalle,
     },
@@ -767,19 +851,19 @@ const nodeSociedad: QuestionNode = {
   options: [
     {
       label: 'La historia, la filosofía y las lenguas',
-      imageUrl: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/personas-debate.jpg',
       imageAlt: 'Personas diversas debatiendo ideas en un espacio académico',
       next: nodeHistoriaOLenguas,
     },
     {
       label: 'La justicia, los derechos y la política',
-      imageUrl: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/abogada-documentos.jpg',
       imageAlt: 'Abogada leyendo documentos legales en un despacho',
       next: leafDerechoPolitica,
     },
     {
       label: 'Entender y mejorar la sociedad',
-      imageUrl: 'https://images.unsplash.com/photo-1529390079861-591de354faf5?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/investigadora-social.jpg',
       imageAlt: 'Investigadora social entrevistando a personas en comunidad',
       next: leafCienciasSociales,
     },
@@ -792,15 +876,21 @@ const nodeNegocios: QuestionNode = {
   options: [
     {
       label: 'Crear y dirigir empresas o proyectos',
-      imageUrl: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/emprendedora-startup.jpg',
       imageAlt: 'Emprendedora presentando su proyecto a inversores en una startup',
       next: leafEmpresa,
     },
     {
       label: 'Análisis económico, finanzas e inversión',
-      imageUrl: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/analista-financiera.jpg',
       imageAlt: 'Analista financiera revisando gráficos y datos económicos',
       next: leafEconomiaFinanzas,
+    },
+    {
+      label: 'Turismo, hostelería y experiencias',
+      imageUrl: '/images/turismo-viajeros.jpg',
+      imageAlt: 'Profesional de turismo atendiendo viajeros en un destino internacional',
+      next: leafTurismo,
     },
   ],
 };
@@ -814,37 +904,37 @@ export const careerTree: QuestionNode = {
   options: [
     {
       label: 'Cuidar y ayudar a las personas',
-      imageUrl: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/sanitaria-paciente.jpg',
       imageAlt: 'Profesional sanitaria sonriendo con una paciente mayor',
       next: nodeCuidar,
     },
     {
       label: 'Crear y diseñar cosas nuevas',
-      imageUrl: 'https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/artista-estudio.jpg',
       imageAlt: 'Artista creando una obra original en su estudio',
       next: nodeCrear,
     },
     {
       label: 'Entender cómo funciona el mundo natural',
-      imageUrl: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/cientifica-laboratorio.jpg',
       imageAlt: 'Científica investigando con microscopio en laboratorio',
       next: nodeNaturaleza,
     },
     {
       label: 'Construir y hacer funcionar las cosas',
-      imageUrl: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/tecnologia-componentes.jpg',
       imageAlt: 'Ingeniera analizando componentes de tecnología avanzada',
       next: nodeConstruir,
     },
     {
       label: 'Comprender la sociedad y la cultura',
-      imageUrl: 'https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/personas-debate.jpg',
       imageAlt: 'Personas diversas colaborando y debatiendo ideas',
       next: nodeSociedad,
     },
     {
       label: 'Liderar, emprender y trabajar con datos',
-      imageUrl: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80',
+      imageUrl: '/images/profesional-negocios.jpg',
       imageAlt: 'Profesional de negocios presentando datos y resultados',
       next: nodeNegocios,
     },
