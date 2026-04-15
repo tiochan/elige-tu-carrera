@@ -7,6 +7,7 @@ const trees: Record<Locale, QuestionNode> = {
   es: treeEs,
   ca: treeCa,
   gl: treeGl,
+  eu: treeEs,
 };
 
 export function getCareerTree(locale: Locale): QuestionNode {

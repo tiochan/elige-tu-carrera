@@ -3,7 +3,7 @@
 import type { Locale } from '@/types';
 import { useLocale, useStrings } from '@/i18n';
 
-const LOCALES: Locale[] = ['es', 'ca', 'gl'];
+const LOCALES: Locale[] = ['es', 'ca', 'gl', 'eu'];
 
 export default function LanguageSwitcher() {
   const { locale, setLocale } = useLocale();

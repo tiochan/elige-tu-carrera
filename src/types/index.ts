@@ -1,4 +1,4 @@
-export type Locale = 'es' | 'ca' | 'gl';
+export type Locale = 'es' | 'ca' | 'gl' | 'eu';
 
 export type BachilleratoTrack = 'ciencias' | 'tecnologico' | 'sociales' | 'artes';
 
