@@ -1,13 +1,14 @@
 # Ideas to add
 
-- Cómo de "free" son las imágenes?
 - Multi-idioma (cubrir lenguas de España: catalán, gallego, euskera, otros?)
 
 
 # Ideas added
 
-- Añadir más cobertura de carreras
-
+- Añadir más cobertura de carreras (67 → 78 carreras universitarias)
+- Imágenes auto-alojadas en /public/images/ (eliminada dependencia de Unsplash)
+- Helper en la aplicación explicando cobertura y funcionamiento del árbol
+- README orientado a producto/usuario con información de cobertura y diseño del árbol
 
 
 # Initial prompt
