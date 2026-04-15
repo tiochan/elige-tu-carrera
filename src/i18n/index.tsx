@@ -123,7 +123,7 @@ export const strings: Record<Locale, Strings> = {
       sociales: 'Humanidades y Sociales',
       artes: 'Artes',
     },
-    language: { es: 'Español', ca: 'Català', gl: 'Galego' },
+    language: { es: 'Español', ca: 'Català', gl: 'Galego', eu: 'Euskara' },
   },
 
   ca: {
@@ -189,7 +189,7 @@ export const strings: Record<Locale, Strings> = {
       sociales: 'Humanitats i Socials',
       artes: 'Arts',
     },
-    language: { es: 'Español', ca: 'Català', gl: 'Galego' },
+    language: { es: 'Español', ca: 'Català', gl: 'Galego', eu: 'Euskara' },
   },
 
   gl: {
@@ -255,7 +255,73 @@ export const strings: Record<Locale, Strings> = {
       sociales: 'Humanidades e CC. Sociais',
       artes: 'Artes',
     },
-    language: { es: 'Español', ca: 'Català', gl: 'Galego' },
+    language: { es: 'Español', ca: 'Català', gl: 'Galego', eu: 'Euskara' },
+  },
+
+  eu: {
+    meta: {
+      title: 'Zer izan nahi duzu handi zarenean?',
+      description: 'Aurkitu zure pasioekin bat datozen karrerak eta batxilergoa',
+    },
+    helpButtonAriaLabel: 'Laguntza',
+    welcome: {
+      heading1: 'Zer izan nahi duzu',
+      heading2: 'handi zarenean?',
+      subtitle: 'Aurkitu zure pasioekin bat datozen karrerak eta batxilergoa horretarako abiapuntu onena.',
+      howItWorks: 'Nola funtzionatzen du?',
+      step1: 'Irudi bidezko egoerak erakutsiko dizkizugu.',
+      step2: 'Gehien deitzen zaizuna hautatu, gehiegi pentsatu gabe.',
+      step3: 'Amaieran zure karrerak eta batxilergoa ikusi ahal izango dituzu.',
+      start: 'Hasi →',
+      footer: 'Edozein momentutan atzera egin eta beste aukerak aztertu ditzakezu.',
+    },
+    breadcrumb: { back: '← Atzera' },
+    result: {
+      heading: 'Karrera hauek zurekin bat datoz!',
+      subtitle: 'Zure aukerak kontuan hartuta, hona hemen zure pasioetan hobeto lerrokatzen diren aukera profesionalak.',
+      bachilleratoPrefix: 'Batxilergoa:',
+      dayInLife: 'Zure egunerokoa',
+      back: '← Aurreko urratsera itzuli',
+      reset: 'Berriz hasi',
+    },
+    helpModal: {
+      title: 'Nola funtzionatzen du',
+      closeAriaLabel: 'Itxi',
+      intro: 'Zure interesak irudiak aukeratuta aztertzen dituzu 2 edo 3 urratsetan. Amaieran zure pasioekin bat datozen unibertsitateko karrerak eta Batxilergoa horretarako abiapuntu onena aurkitzen dituzu.',
+      treeTitle: 'Erabaki-arbola',
+      step1Label: 'Lanbide-arloa',
+      step1Desc: 'Zein esparrutan ikusten duzu zure etorkizuna? — 6 aukera',
+      step2Label: 'Alderdi zehatza',
+      step2Desc: 'Zein zati erakartzen zaitu gehiago? — 2-3 aukera',
+      step3Label: 'Jarduera mota',
+      step3Desc: 'Zein lan mota ikusten duzu zure burua egiten? — 2-3 aukera',
+      treeResult: 'Emaitza: 3 eta 6 karrera artean, deskribapena eta egunerokoarekin.',
+      treeFootnote: 'Galderak motibazioak aztertzen dituzte (zer ikusten duzun zure burua egiten), ez trebetasunak. DBH 4. mailan badago denbora karrerak eskatzen duena garatzeko.',
+      careersTitle: 'Zer karrera biltzen ditu',
+      careersSummary: '78 unibertsitateko karrera Espainiako sisteman 6 arlotan:',
+      bachilleratoTitle: 'Batxilergo modalitatea',
+      areas: [
+        { area: 'Zaindu eta lagundu', examples: 'Medikuntza, Odontologia, Erizaintza, Psikologia, KAFYD, Irakasletza' },
+        { area: 'Sortu eta diseinatu', examples: 'Arte Ederrak, UX/UI Diseinua, 3D Animazioa, Ikus-entzunezko Komunikazioa' },
+        { area: 'Natura mundua', examples: 'Biologia, Bioteknologia, Fisika, Itsas Zientziak, Kimika' },
+        { area: 'Eraiki eta egin', examples: 'Informatika Ingeniaritza, Robotika, Arkitektura, Aeroespaciala, AA' },
+        { area: 'Gizartea eta kultura', examples: 'Zuzenbidea, Kriminologia, Historia, Filologia, Nazioarteko Harremanak' },
+        { area: 'Liderar eta ekintzaileak', examples: 'EAZ, Ekonomia, Finantza, Turismoa, Hotel Zuzendaritza' },
+      ],
+      tracks: [
+        { label: 'Zientziak', description: 'Osasuna, zientzia hutsak eta kirola' },
+        { label: 'Teknologikoa', description: 'Ingeniaritzak, informatika eta arkitektura' },
+        { label: 'Giza eta Gizarte Zientziak', description: 'Zuzenbidea, ekonomia, komunikazioa, turismoa' },
+        { label: 'Arteak', description: 'Diseinua, arte ederrak, musika eta antzerkia' },
+      ],
+    },
+    bachillerato: {
+      ciencias: 'Zientziak',
+      tecnologico: 'Teknologikoa',
+      sociales: 'Giza eta Gizarte Zientziak',
+      artes: 'Arteak',
+    },
+    language: { es: 'Español', ca: 'Català', gl: 'Galego', eu: 'Euskara' },
   },
 };
 
